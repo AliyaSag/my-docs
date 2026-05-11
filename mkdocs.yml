@@ -45,6 +45,20 @@ markdown_extensions:
   - tables
 
 nav:
-  - Home: index.md
-  - Guide: guide.md
-  - About: about.md
+  - Главная: index.md
+  - Карьерный старт:
+    - Войти в IT без технического образования: career/enter-it.md
+    - Найти первую стажировку: career/find-internship.md
+    - Собрать портфолио с нуля: career/build-portfolio.md
+    - Пройти испытательный срок: career/probation.md
+  - Мышление и рост:
+    - Работа как терапия: mindset/work-as-therapy.md
+    - Декомпозиция тревоги: mindset/anxiety-decomposition.md
+    - Синдром самозванца на старте: mindset/impostor-syndrome.md
+  - Инструменты:
+    - Системы управления задачами: tools/task-management.md
+    - Методы обратной связи: tools/feedback-methods.md
+    - Форматы личной ретроспективы: tools/retrospective-formats.md
+  - Справочник:
+    - Глоссарий карьерного старта: reference/glossary.md
+    - Список ресурсов: reference/resources.md
