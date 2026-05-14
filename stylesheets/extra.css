@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap');
+
+/* ── Header ── */
+.md-header {
+  background: #0a0a18;
+  border-bottom: 1px solid rgba(124, 58, 237, 0.3);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.1);
+}
+
+/* ── Logo text ── */
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #bf7fff, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Nav tabs ── */
+.md-tabs {
+  background: #0d0d1a;
+  border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+}
+
+.md-tabs__link--active {
+  color: #bf7fff !important;
+}
+
+.md-tabs__link--active::after {
+  background: linear-gradient(90deg, #7c3aed, #3b82f6) !important;
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.6);
+}
+
+/* ── Sidebar ── */
+.md-nav__link--active {
+  color: #bf7fff !important;
+  border-left: 2px solid #7c3aed;
+  padding-left: 8px;
+}
+
+/* ── Page h1 gradient ── */
+.md-content h1 {
+  background: linear-gradient(90deg, #bf7fff 0%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+/* ── Glowing underline after h1 ── */
+.md-content h1::after {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed, #3b82f6);
+  border-radius: 2px;
+  margin-top: 8px;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.7);
+}
+
+/* ── Code blocks ── */
+.highlight {
+  border: 1px solid rgba(124, 58, 237, 0.25) !important;
+  border-radius: 8px !important;
+}
+
+.highlight pre {
+  background: #06060f !important;
+}
+
+/* ── Admonitions ── */
+.admonition {
+  border-radius: 0 8px 8px 0 !important;
+  border-left-width: 3px !important;
+}
+
+.admonition.note {
+  border-left-color: #3b82f6 !important;
+  background: rgba(59, 130, 246, 0.06) !important;
+}
+
+/* ── Page fade-in animation ── */
+.md-content__inner {
+  animation: cpFadeIn 0.35s ease both;
+}
+
+@keyframes cpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Subtle scanline on header ── */
+.md-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(124, 58, 237, 0.015) 2px,
+    rgba(124, 58, 237, 0.015) 4px
+  );
+  pointer-events: none;
+}
